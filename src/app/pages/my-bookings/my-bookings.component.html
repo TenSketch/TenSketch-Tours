@@ -1,0 +1,17 @@
+<h2 class="text-center my-4">📌 My Bookings</h2>
+
+<div *ngIf="myBookings.length > 0; else noBookings">
+  <div class="card mb-3" *ngFor="let booking of myBookings">
+    <div class="card-body">
+      <h5 class="card-title">{{ booking.vehicleName }}</h5>
+      <p><strong>Pickup:</strong> {{ booking.pickup }}</p>
+      <p><strong>Destination:</strong> {{ booking.destination }}</p>
+      <p><strong>Date & Time:</strong> {{ booking.dateTime }}</p>
+      <p><strong>Status:</strong> <span [ngClass]="{'text-success': booking.status === 'Confirmed', 'text-warning': booking.status === 'Pending'}">{{ booking.status }}</span></p>
+    </div>
+  </div>
+</div>
+
+<ng-template #noBookings>
+  <p class="text-center text-muted">No bookings yet.</p>
+</ng-template>

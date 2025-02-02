@@ -1,0 +1,27 @@
+<div class="auth-container">
+    <div class="auth-box">
+      <h2>Sign Up</h2>
+      <form (submit)="register()">
+        <div class="input-group">
+          <label>Name</label>
+          <input type="text" [(ngModel)]="name" required />
+        </div>
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" [(ngModel)]="email" required />
+        </div>
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" [(ngModel)]="password" required />
+        </div>
+        <div class="input-group">
+          <label>Confirm Password</label>
+          <input type="password" [(ngModel)]="confirmPassword" required />
+        </div>
+        <p class="error-msg" *ngIf="errorMessage">{{ errorMessage }}</p>
+        <button type="submit">Register</button>
+      </form>
+      <p class="switch-link">Already have an account? <a href="/sign-in">Sign In</a></p>
+    </div>
+  </div>
+  

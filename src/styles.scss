@@ -1,0 +1,144 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.py-custom{
+    padding-block: 5rem;
+}
+/* Navbar */
+.navbar {
+  height: 60px;
+  .navbar-brand {
+    img {
+        height: 30px;
+      }
+  }
+  .nav-link{
+    display: flex;
+  }
+}
+
+
+  
+  /* Hero Section */
+  #hero {
+    padding: 100px 20px;
+  }
+  
+  /* Service Cards */
+  .service-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #e0e0e0, -10px -10px 20px #ffffff;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    &:hover {
+        transform: scale(1.05);
+      }
+      i {
+        font-size: 50px;
+        color: #007bff;
+        margin-bottom: 15px;
+      }
+      
+  }
+  
+  
+  /* Bottom Navigation */
+  #bottom-nav {
+    min-height: 8vh;
+    .nav-link{
+        color: #f7f9fc;
+    }
+  }
+  
+  .nav-link i {
+    font-size: 20px;
+    display: block;
+  }
+  
+
+  .auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+  }
+  
+  .auth-box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+  }
+  
+  h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .input-group {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  .error-msg {
+    color: red;
+    font-size: 0.9rem;
+  }
+  
+  .switch-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .switch-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .switch-link a:hover {
+    text-decoration: underline;
+  }
+  
+  

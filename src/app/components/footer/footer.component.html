@@ -1,0 +1,10 @@
+<!-- Bottom Fixed Footer -->
+<footer id="bottom-nav" class="d-flex justify-content-around py-3 shadow-sm fixed-bottom bg-primary">
+    <a href="/" class="nav-link flex-column align-items-center text-center"><i class="mb-2 fa-solid fa-home"></i> Home</a>
+    <a href="/vehicles" class="nav-link flex-column align-items-center text-center"><i class="mb-2 fa-solid fa-car"></i>Book Vehicle</a>
+    <a href="/book-tour" class="nav-link flex-column align-items-center text-center"><i class="mb-2 fa-solid fa-calendar"></i> Book Tour</a>
+    <a *ngIf="isLoggedIn; else signInLink" href="/my-account" class="nav-link flex-column align-items-center text-center"><i class="mb-2 fa-solid fa-user"></i> My Account</a>
+      <ng-template #signInLink>
+        <a href="/sign-in" class="nav-link flex-column align-items-center text-center"><i class="mb-2 fa-solid fa-sign-in"></i> Sign In</a>
+      </ng-template>
+  </footer>

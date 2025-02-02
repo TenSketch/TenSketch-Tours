@@ -1,0 +1,33 @@
+<div class="account-page">
+    <!-- Header with Profile -->
+    <div class="account-header">
+      <img [src]="user.profilePic" alt="Profile Picture" class="profile-pic">
+      <h2>{{ user.name }}</h2>
+    </div>
+  
+    <!-- Edit Profile Button -->
+    <button class="edit-profile-btn">View and Edit Profile</button>
+  
+    <!-- Account Options List -->
+    <div class="account-menu">
+      <a href="/my-bookings" class="menu-item">
+        <i class="fa-solid fa-calendar-check"></i> My Bookings
+      </a>
+      <a href="/saved-destinations" class="menu-item">
+        <i class="fa-solid fa-map-marker-alt"></i> Saved Destinations
+      </a>
+      <a href="/settings" class="menu-item">
+        <i class="fa-solid fa-cog"></i> Settings (Privacy)
+      </a>
+  
+      <!-- Logout Button: Show Only if Logged In -->
+      <a *ngIf="isLoggedIn" (click)="logout()" class="menu-item logout">
+        <i class="fa-solid fa-sign-out-alt"></i> Logout
+      </a>
+  
+      <a href="/select-language" class="menu-item">
+        <i class="fa-solid fa-globe"></i> Select Language
+      </a>
+    </div>
+  </div>
+  
